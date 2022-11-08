@@ -4,6 +4,6 @@ SELECT
     rental.rental_date
 FROM   
     rental
-    INNER JOIN customer ON rental.customer_id = customer.first_name
+    INNER JOIN customer ON rental.customer_id = customer.customer_id
 WHERE
     customer.first_name = 'Patricia'
